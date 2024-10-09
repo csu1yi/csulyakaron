@@ -1,6 +1,7 @@
 export interface Resztvevo {
     nev: string;
     email: string;
+    mobile: number;
 }
 
 export class Esemeny {
@@ -16,8 +17,8 @@ addResztvevo(resztvevo:Resztvevo): void {
     this.resztvevo.push(resztvevo);
 }
 
-removeResztvevo(name:string): void {
-    this.resztvevo = this.resztvevo.filter(p => p.nev !== name);
+removeResztvevo(nev:string): void {
+    this.resztvevo = this.resztvevo.filter(p => p.nev !== nev);
 }
 
 printReszletek():void {

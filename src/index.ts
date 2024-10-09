@@ -51,3 +51,8 @@ esemenyKezelo.getEsemenyTemaSzerint("Koncert").forEach(esemeny => esemeny.printR
 console.log("Minden esemény:");
 esemenyKezelo.esemenytListaz();
 
+console.log("Koncert szerkesztese");
+esemenyKezelo.editEsemeny("koncert2", {helyszin: "Papp Laszlo Sportarena", datum: new Date("2025-02-10")});
+
+console.log("Koncert törlése");
+esemenyKezelo.deleteEsemeny("AD/DC koncert");

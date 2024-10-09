@@ -12,8 +12,8 @@ class Esemeny {
     addResztvevo(resztvevo) {
         this.resztvevo.push(resztvevo);
     }
-    removeResztvevo(name) {
-        this.resztvevo = this.resztvevo.filter(p => p.nev !== name);
+    removeResztvevo(nev) {
+        this.resztvevo = this.resztvevo.filter(p => p.nev !== nev);
     }
     printReszletek() {
         console.log(`Esemeny: ${this.nev}`);
